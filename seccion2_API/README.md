@@ -2,7 +2,7 @@
 
 Aplicación en Python con interfaz web que permite extraer un número de un conjunto de los primeros 100 números naturales y luego calcular cuál fue el número extraído.
 
-## 🚀 Cómo Ejecutar la Aplicación
+## Cómo Ejecutar la Aplicación
 
 1. Clona el repositorio o descarga los archivos.
 
@@ -20,7 +20,7 @@ Aplicación en Python con interfaz web que permite extraer un número de un conj
     (http://localhost:5000)
    ```
 
-## 🧠 Descripción del Problema
+## Descripción del Problema
 Calcular el número faltante de un conjunto de los primeros 100 números naturales del cual se extrajo uno.
 
 Requisitos cumplidos:
@@ -31,11 +31,11 @@ Requisitos cumplidos:
 - ✅ Interfaz gráfica con HTML, dinamismo con JS y estilos CSS.
 - ✅ API REST adicional para integración externa.
 
-## 🖥️ Interfaz Web
+## Interfaz Web
 
 Formulario en HTML con estilos modernos que permite al usuario ingresar un número para extraer. Al enviar el formulario, se muestra cuál fue el número extraído.
 
-## 🧪 API REST
+## API REST
 
 También puedes interactuar con la aplicación mediante la API:
 
@@ -60,13 +60,13 @@ POST ``` /api/extract ```
 }
 ```
 
-## 🔍 Validaciones
+## Validaciones
 - Solo se aceptan números enteros entre 1 y 100.
 - El número no debe haber sido extraído anteriormente.
 - El conjunto se reinicia automáticamente si ya se extrajo un número antes.
 - Se van tachando los numeros del conjunto de números
 
-## 📷 Snapshots
+## Snapshots
 
 -  Interfaz principal
 ![Interfaz](/snapshots/interfaz.png)
