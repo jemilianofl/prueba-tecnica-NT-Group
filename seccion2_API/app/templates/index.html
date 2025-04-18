@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Missing Number Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Números del 1 al 100</h1>
+        <form id="extract-form">
+            <input type="number" id="number-input" placeholder="Ingresa un número (1-100)" min="1" max="100" required>
+            <button type="submit">Extraer</button>
+        </form>
+        <div id="message" class="message"></div>
+
+        <div class="grid">
+            {% for n in range(1, 101) %}
+                <div class="cell {% if n in extracted %}extracted{% endif %}" data-number="{{ n }}">{{ n }}</div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
